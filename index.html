@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>search in javascript</title>
+<link rel="stylesheet" href="index.css">
+<script src="first.js"></script>
+</head>
+<body>
+    <div id="header">
+      <h1>TASTE THE FOOD</h1>
+    </div>
+    <div id="head">
+        <h1>Mark It As Favorite Items</h1>
+        <div class="recipe">
+            <div class="content">
+                <h2>Chicken Briyani</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit distinctio, aliquam, est libero dolore voluptas quaerat laudantium earum beatae similique? Numquam sint corrupti maiores animi qui laborum repellat dolorem.</p>
+            </div>
+            <button class="favorite-btn" onclick="toggleFavorite(this)">❤</button>
+        </div>
+        <div class="recipe">
+            <div class="content">
+                <h2>Chicken Briyani</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit distinctio, aliquam, est libero dolore voluptas quaerat laudantium earum beatae similique? Numquam sint corrupti maiores animi qui laborum repellat dolorem.</p>
+            </div>
+            <button class="favorite-btn" onclick="toggleFavorite(this)">❤</button>
+        </div>
+    </div>
+    
+    <div class="recipe1">
+      <h2>Coffee</h2>
+      <label for="servings">Servings:</label>
+      <input type="number" id="servings" value="1" min="1" onchange="updateIngredients()">
+      <ul id="ingredient-list">
+          <li data-quantity="1">1 cup milk</li>
+          <li data-quantity="2">2 spoon coffee powder</li>
+          <li data-quantity="0.5">0.5 spoon sugar</li>
+      </ul>
+    </div>
+    <div class="recipe2">
+        <h2>Tomato Rice</h2>
+        <label for="servings">Servings:</label>
+        <input type="number" id="servings" value="1" min="1" onchange="updateIngredients()">
+        <ul id="ingredient-list">
+            <li data-quantity="1">1 cup of Rice</li>
+            <li data-quantity="2">2 Tomatoes</li>
+            <li data-quantity="0.2">0.2 spoon of turmeric</li>
+            <li data-quantity="1">1 spoon of Salt , RedChill , Oil</li>
+        </ul>
+      </div>
+<div class="container-fluid">
+<div class="container">
+<div class="search">
+<h1>All Items</h1>
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<div class="product-list">
+    <div class="product">
+        <div class="product1">
+        <h3>Chicken Fried Rice</h3>
+        <h4>Ingredient : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum minima pariatur nihil commodi omnis aspernatur repellendus sequi harum perferendis, necessitatibus quas amet ex eveniet, hic et doloremque alias quis!</h4>
+        </div>
+        <img src="Images/CHICKEN FRIED RICE.png" alt="">
+    </div>
+    <div class="product">
+            <div class="product1">
+            <h3>Egg Fried Rice</h3>
+            <h4>Ingredient : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum minima pariatur nihil commodi omnis aspernatur repellendus sequi harum perferendis, necessitatibus quas amet ex eveniet, hic et doloremque alias quis!</h4>
+            </div>
+            <img src="Images/EGG FRIED RICE.png" alt="">
+    </div>
+        <div class="product">
+                <div class="product1">
+                <h3>Biryani</h3>
+                <h4>Ingredient : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum minima pariatur nihil commodi omnis aspernatur repellendus sequi harum perferendis, necessitatibus quas amet ex eveniet, hic et doloremque alias quis!</h4>
+                </div>
+                <img src="Images/BIRYANI.png" alt="">
+        </div>
+        <div class="product">
+            <div class="product1">
+            <h3>Ramen</h3>
+            <h4>Ingredient : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum minima pariatur nihil commodi omnis aspernatur repellendus sequi harum perferendis, necessitatibus quas amet ex eveniet, hic et doloremque alias quis!</h4>
+            </div>
+            <img src="Images/RAMEN.png" alt="">
+    </div>
+            
+</div>
+</div>
+</div>
+</body>
+</html>
